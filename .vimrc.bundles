@@ -51,8 +51,7 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0 
 
-
-
+map <F5> :!cscope -Rbq<CR>:cs reset<CR><CR> “按F5键即可自动创建/更新cscope数据库
 if has("cscope")
     set csprg=/usr/bin/cscope
     set csto=1
